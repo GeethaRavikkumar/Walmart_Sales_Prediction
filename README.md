@@ -23,5 +23,14 @@ Regressor and tried boosting the algorithm with Gradient Boosting.
    - Plotted the Box Plot to find the distribution pattern for each independent variable and also to find the outliers
    
 # Missing Value Handling:
- 
+   - Advertising Expenses column has lot of missing values, but if we could see in the business perspective may be we might have not 
+     contributed for Advertisement during that particular month. So instead of dropping it, I have replaced the missing values with zeroes 
+     indicating no contribution towards the advertisement.
+   - Target column (SALES) also had missing values ( 12 Values are missing) since the count is less i have replaced them with the 
+     Median values
+      
 # Outliers Treatment:
+   - Cotton Monthly Price and it % change have huge number of outliers - Treated the outliers
+     Treatment : Get the median and the standard deviation of every group and Subtract median from every member of each group. Take
+     absolute values > 3 standard Deviation and have replaced them with the median of those outliers.
+     
